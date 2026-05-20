@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ELIXIR | Moda Futurista</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> ELIXIR </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#reseñas">Reseñas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+
+          <!-- CARRITO -->
+          <button
+            id="abrirCarrito"
+            class="btn btn-light ms-3 position-relative"
+          >
+            <i class="bi bi-bag"></i>
+
+            <span
+              id="contador-carrito"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+            >
+              0
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <p class="small-title">STREETWEAR • FUTURO • IDENTIDAD</p>
+
+            <h1 class="display-1 fw-bold">ELIXIR</h1>
+
+            <p class="lead">
+              Moda futurista inspirada en la estética streetwear y el lujo
+              minimalista.
+            </p>
+
+            <div class="hero-buttons">
+              <button class="btn btn-dark btn-lg">Explorar colección</button>
+
+              <button class="btn btn-outline-light btn-lg ms-3">
+                Ver catálogo
+              </button>
+            </div>
+
+            <!-- ESTADÍSTICAS -->
+            <div class="stats mt-5">
+              <div>
+                <h3>+5K</h3>
+                <p>Clientes</p>
+              </div>
+
+              <div>
+                <h3>+120</h3>
+                <p>Productos</p>
+              </div>
+
+              <div>
+                <h3>4.9</h3>
+                <p>Reviews</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- IMAGEN -->
+          <div class="col-lg-6 text-center">
+            <img src="img/hero.jpg" class="img-fluid hero-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section id="productos" class="container py-5">
+      <h2>NUEVA COLECCIÓN</h2>
+
+      <div class="row g-4">
+        <!-- PRODUCTO 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/hoddie.jpg" class="card-img-top" />
+
+            <div class="card-body text-center">
+              <h5 class="card-title">Hoodie Oversize</h5>
+
+              <p class="card-text">$190.000</p>
+
+              <button class="btn btn-dark agregar-carrito">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/chaqueta.jpg" class="card-img-top" />
+
+            <div class="card-body text-center">
+              <h5 class="card-title">Chaqueta Neo</h5>
+
+              <p class="card-text">$320.000</p>
+
+              <button class="btn btn-dark agregar-carrito">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/cargo.jpg" class="card-img-top" />
+
+            <div class="card-body text-center">
+              <h5 class="card-title">Cargo Dark</h5>
+
+              <p class="card-text">$240.000</p>
+
+              <button class="btn btn-dark agregar-carrito">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BANNER ================= -->
+
+    <section class="banner-section">
+      <div class="container text-center">
+        <h2>FUTURA COLLECCION 2026</h2>
+
+        <p>
+          Diseños exclusivos inspirados en identidad digital y moda urbana
+          contemporánea.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="nosotros" class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <img src="img/about.jpg" class="img-fluid rounded shadow" />
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-4">SOBRE ELIXIR</h2>
+
+          <p>
+            ELIXIR nace como una propuesta de moda contemporánea inspirada en la
+            identidad digital, el streetwear premium y la expresión individual.
+          </p>
+
+          <p>
+            Nuestra visión combina estética minimalista, siluetas oversize y una
+            dirección visual futurista para crear piezas que trascienden la moda
+            tradicional.
+          </p>
+
+          <p>
+            Cada colección está diseñada para representar autenticidad,
+            creatividad y exclusividad, fusionando elementos urbanos con una
+            experiencia visual editorial.
+          </p>
+
+          <p>
+            Más que ropa, ELIXIR representa una identidad: una comunidad que
+            encuentra en la moda una forma de comunicar personalidad, innovación
+            y estilo.
+          </p>
+
+          <h3 class="frase-brand">"El futuro no viene. Ya está aquí.”</h3>
+
+          <button class="btn btn-dark mt-4">Conocer más</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESEÑAS ================= -->
+
+    <section id="reseñas" class="container py-5">
+      <h2>RESEÑAS</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card p-4 shadow h-100">
+            <i class="bi bi-stars icon-review"></i>
+
+            <h5>Sofía</h5>
+
+            <p>
+              “Me encanta el estilo elegante y futurista de la marca, compraria
+              mil veces aca .”
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-4 shadow h-100">
+            <i class="bi bi-stars icon-review"></i>
+
+            <h5>Daniel</h5>
+
+            <p>“La ropa tiene una estética premium y moderna, me encanta.”</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-4 shadow h-100">
+            <i class="bi bi-stars icon-review"></i>
+
+            <h5>Mía</h5>
+
+            <p>
+              “ELIXIR representa identidad y creatividad, me gustan muchi sus
+              precios y el estilo .”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section id="contacto" class="container py-5">
+      <h2>CONTÁCTANOS</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form>
+            <input type="text" placeholder="Nombre" class="form-control mb-3" />
+
+            <input
+              type="email"
+              placeholder="Correo electrónico"
+              class="form-control mb-3"
+            />
+
+            <textarea
+              rows="5"
+              placeholder="Escribe tu mensaje"
+              class="form-control mb-3"
+            ></textarea>
+
+            <button class="btn btn-dark w-100">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="container mb-5">
+      <div class="newsletter">
+        <h2>ÚNETE A ELIXIR</h2>
+
+        <p class="mb-4">
+          Suscríbete para recibir nuevas colecciones y lanzamientos exclusivos.
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <input
+              type="email"
+              placeholder="Ingresa tu correo"
+              class="form-control mb-3"
+            />
+
+            <button class="btn btn-dark">Suscribirme</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CARRITO ================= -->
+
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h3>Tu carrito</h3>
+
+          <button id="cerrarCarrito">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <div id="cartItems">
+          <p class="carrito-vacio">Tu carrito está vacío</p>
+        </div>
+
+        <div class="cart-footer">
+          <h4>
+            Total: $
+            <span id="cartTotal">0</span>
+          </h4>
+
+          <button class="btn btn-dark w-100 mt-3">Finalizar compra</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white text-center p-4">
+      <p class="mb-0">© 2026 ELIXIR | Moda futurista</p>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
